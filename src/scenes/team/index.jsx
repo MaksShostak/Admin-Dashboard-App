@@ -51,10 +51,10 @@ const Team = () => {
             justifyContent="center"
             backgroundColor={
               access === 'admin'
-                ? colors.greenAccent[600]
+                ? colors.greenAccent[800]
                 : access === 'manager'
                 ? colors.greenAccent[700]
-                : colors.greenAccent[700]
+                : colors.greenAccent[600]
             }
             borderRadius="4px"
           >
