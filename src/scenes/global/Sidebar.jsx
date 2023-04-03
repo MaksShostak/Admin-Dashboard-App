@@ -93,7 +93,7 @@ const SideBar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/photo_2023-03-01_17-41-42.jpg`}
+                  src={`../../../public/assets/photo_2023-03-01_17-41-42.jpg`}
                   style={{ cursor: 'pointer', borderRadius: '50%' }}
                 />
               </Box>
