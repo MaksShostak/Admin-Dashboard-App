@@ -8,20 +8,14 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import items from '../../data/sideBarData';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
-  // const theme = useTheme();
-  // const colors = tokens(theme.palette.mode);
   return (
     <MenuItem
       active={selected === title}
-      // style={{
-      //   color: colors.grey[100],
-      // }}
       onClick={() => setSelected(title)}
       icon={icon}
       component={<Link to={to} />}
     >
       <Typography>{title}</Typography>
-      {/* <Link to={to} /> */}
     </MenuItem>
   );
 };
@@ -46,8 +40,10 @@ const SideBar = () => {
         collapsed={collapsed}
         rootStyles={{
           background: 'transparent',
+          borderRightStyle: 'none',
         }}
         backgroundColor={colors.primary[400]}
+        border="none"
       >
         <Menu
           menuItemStyles={{
@@ -64,7 +60,6 @@ const SideBar = () => {
                 };
             },
           }}
-          iconShape="square"
         >
           {/* LOGO AND MENU ICON */}
           <MenuItem
@@ -72,7 +67,6 @@ const SideBar = () => {
             icon={collapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: '10px 0 20px 0',
-              // color: colors.grey[100],
             }}
           >
             {!collapsed && (
