@@ -4,6 +4,7 @@ import { Box, IconButton, useTheme, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { tokens } from './../../theme';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import userPhoto from '../../assets/photo_2023-03-01_17-41-42.jpg';
 
 import items from '../../data/sideBarData';
 
@@ -90,10 +91,11 @@ const SideBar = () => {
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
-                  alt="profile-user"
+                  alt="user-foto"
                   width="100px"
                   height="100px"
-                  src={`../../../public/assets/photo_2023-03-01_17-41-42.jpg`}
+                  backgroundColor="red"
+                  src={userPhoto}
                   style={{ cursor: 'pointer', borderRadius: '50%' }}
                 />
               </Box>
